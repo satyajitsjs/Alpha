@@ -89,14 +89,11 @@ function getCookie(name) {
 $(document).ready(function() {
   $('#contact_form').on('submit', function(event) {
       event.preventDefault(); // Prevent default form submission
-
-      // Get form data
       var formData = $(this).serialize();
-
-      // Send AJAX request
+      $('#loader-contact').show()
       $.ajax({
           type: 'POST',
-          url: 'contact_form.php', // Path to your PHP mailer script
+          url: 'contact_form.php',
           data: formData,
           dataType: 'json',
           success: function(response) {
@@ -108,6 +105,9 @@ $(document).ready(function() {
           },
           error: function() {
               toastr.error('An error occurred while sending the email.');
+          },
+          complete: function() {
+            $('#loader-contact').hide(); 
           }
       });
   });
