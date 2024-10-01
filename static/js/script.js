@@ -84,35 +84,31 @@ function getCookie(name) {
   }
   return cookieValue;
 }
-$(document).ready(function () {
-  $('#contact_form').on('submit', function (e) {
-    e.preventDefault(); // Prevent the default form submission
 
-    // Gather form data
-    var formData = {
-      name: $('#name').val(),
-      email: $('#email').val(),
-      mobile: $('#mobile').val(),
-      subject: $('#subject').val(),
-      message: $('#message').val(), // Make sure to include the message
-    };
 
-    // AJAX request
-    $.ajax({
-      type: 'POST',
-      url: 'contact_form.php', // Your PHP script that processes the form
-      data: formData,
-      dataType: 'json',
-      success: function (response) {
-        if (response.success) {
-          alert('Message sent successfully!');
-        } else {
-          alert(response.message); // Handle validation errors
-        }
-      },
-      error: function (xhr, status, error) {
-        console.error('AJAX Error: ' + status + error);
-      },
-    });
+$(document).ready(function() {
+  $('#contact_form').on('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get form data
+      var formData = $(this).serialize();
+
+      // Send AJAX request
+      $.ajax({
+          type: 'POST',
+          url: 'contact_form.php', // Path to your PHP mailer script
+          data: formData,
+          dataType: 'json',
+          success: function(response) {
+              if (response.status === 'success') {
+                  toastr.success(response.message);
+              } else {
+                  toastr.error(response.message);
+              }
+          },
+          error: function() {
+              toastr.error('An error occurred while sending the email.');
+          }
+      });
   });
 });
