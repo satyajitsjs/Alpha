@@ -1,7 +1,3 @@
 User-agent: *
-Disallow: /
-Disallow: /#home
-Disallow: /#about
-Disallow: /#services
-Disallow: /#project
-Disallow: /#contact
+Disallow: 20
+Allow: /
