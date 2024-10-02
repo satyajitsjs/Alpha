@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.alphazero.in/</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.alphazero.in/#about</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.alphazero.in/#services</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects Page -->
+  <url>
+    <loc>https://www.alphazero.in/#project</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.alphazero.in/#contact</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Portfolio Projects -->
+  <url>
+    <loc>https://www.alphazero.in/project1</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.alphazero.in/project2</loc>
+    <lastmod>2024-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Add more URLs as needed -->
+
+</urlset>
