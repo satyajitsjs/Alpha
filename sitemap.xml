@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <!-- Home Page -->
   <url>
     <loc>https://www.alphazero.in/</loc>
@@ -28,7 +28,7 @@
 
   <!-- Projects Page -->
   <url>
-    <loc>https://www.alphazero.in/project</loc>
+    <loc>https://www.alphazero.in/projects</loc>
     <lastmod>2024-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -55,6 +55,5 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- Add more URLs as needed -->
-
+  
 </urlset>
