@@ -59,8 +59,8 @@ ScrollReveal().reveal(".home-content p, .about-content", {
 
 const typed = new Typed(".multiple-text", {
   strings: [
-    "Website Devlopment",
-    "Software Devlopment",
+    "Website Development",
+    "Software Development",,
     "Web Designing",
     "Graphic Designing",
   ],
